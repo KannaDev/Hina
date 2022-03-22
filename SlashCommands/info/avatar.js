@@ -21,6 +21,5 @@ const { Client, CommandInteraction, MessageEmbed } = require('discord.js');
         .setImage(target.displayAvatarURL({ dynamic: true, size: 4096 }))
         .setColor("#F8C8DC")
       interaction.editReply({ embeds: [embed] })
-    
     }
   }
