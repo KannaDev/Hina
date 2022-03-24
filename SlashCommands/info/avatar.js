@@ -2,10 +2,10 @@ const { Client, CommandInteraction, MessageEmbed } = require('discord.js');
   
   module.exports = {
     name: 'avatar',
-    description: 'Avatar?',
+    description: 'Display a users Avatar.',
     options: [{
       name: "target",
-      description: "Display a users avatar.",
+      description: "Display a users Avatar.",
       type: "USER",
       required: false,
     }],

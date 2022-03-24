@@ -22,6 +22,8 @@ client.on("interactionCreate", async (interaction) => {
         interaction.member = interaction.guild.members.cache.get(interaction.user.id);
 
         cmd.run(client, interaction, args);
+        // Output the username and discriminator of the user executing the interaction.
+        console.log(`${interaction.member.user.username}#${interaction.member.user.discriminator}`)
     }
 
     // Context Menu Handling
