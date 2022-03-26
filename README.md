@@ -24,6 +24,6 @@ Before doing any contributions. Be sure to checkout the guide on how-to [here](h
 Pull Requests are always welcome for adding new features, fixing bugs, etc. Any security issues should be emailed at [mail@kannadev.com](mailto:mail@kannadev.com).
 
 
-# Contributing
+# Contributors
 
-[Saige](https://github.com/Saigeie)
+[Saige](https://github.com/Saigeie) - Refactored to typescript, moved the original commands to the new handler, made a base for an economy system 🤍
