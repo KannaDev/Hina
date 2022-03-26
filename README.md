@@ -22,3 +22,8 @@ Hina is a multi-purpose Discord bot that seeks to provide a safer and more enjoy
 Before doing any contributions. Be sure to checkout the guide on how-to [here](https://github.com/KannaDev/Hina/blob/main/CONTRIBUTING.md)!
 
 Pull Requests are always welcome for adding new features, fixing bugs, etc. Any security issues should be emailed at [mail@kannadev.com](mailto:mail@kannadev.com).
+
+
+# Contributing
+
+[Saige](https://github.com/Saigeie)

@@ -1,22 +1,35 @@
 {
-    "name": "hina",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js",
-        "test": "nodemon index.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "chalk": "^5.0.1",
-        "cli-box": "^6.0.10",
-        "discord.js": "^13.2.0",
-        "dotenv": "^16.0.0",
-        "glob": "^7.1.7",
-        "humanize-duration": "^3.27.1",
-        "mongoose": "^6.0.2"
-    }
+  "name": "hina",
+  "version": "1.0.0",
+  "description": "✨ Open-Source Multipurpose Discord Bot made by Kanna",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --rs --cls src/index.ts",
+    "build": "tsc",
+    "prod": "node dist/index.js"
+  },
+  "keywords": [
+    "discord.js",
+    "bot",
+    "typescript",
+    "mongoose",
+    "mongodb",
+    "discord bot"
+  ],
+  "author": "Kanna",
+  "license": "ISC",
+  "dependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/humanize-duration": "^3.27.1",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "humanize-duration": "^3.27.1",
+    "mongoose": "^6.2.8",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
 }
