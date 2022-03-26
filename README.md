@@ -1,7 +1,7 @@
 # Hina
 Open-Source Multi-Purpose Discord Bot made by [Kanna](https://kannadev.com/).
 
-Credits to [this repository](https://github.com/reconlx/djs-base-handler) for the base handler. (ɔ◔‿◔)ɔ ♥
+Credits to [Saige](https://github.com/Saigeie) for the handler. (ɔ◔‿◔)ɔ ♥
 
 # What is Hina?
 
