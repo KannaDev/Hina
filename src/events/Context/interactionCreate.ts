@@ -5,7 +5,8 @@ import { Event } from "../../structures/Event";
 import { Extendedinteraction } from "../../types/CommandTypes";
 
 export default new Event("interactionCreate", async (interaction) => {
-  if (interaction.isCommand()) {
+  try {
+    if (interaction.isCommand()) {
     const command = client.commands.get(interaction.commandName);
     if (!command) return interaction.reply({
         content: "You have used a non existent command",
@@ -19,4 +20,7 @@ export default new Event("interactionCreate", async (interaction) => {
       userData: userData
     });
   }
+} catch (err) {
+  console.log(err);
+}
 });

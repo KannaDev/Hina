@@ -5,7 +5,7 @@ import duration from "humanize-duration";
 
 export default new Command({
     name: `stats`,
-    description: `🤍| See hina's statistics!`,
+    description: `🤍 | See hina's statistics!`,
     run: async ({ interaction, client }) => {
         interaction.reply({
           embeds: [
