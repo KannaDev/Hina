@@ -9,7 +9,7 @@ export default new Event("interactionCreate", async (interaction) => {
     if (interaction.isCommand()) {
     const command = client.commands.get(interaction.commandName);
     if (!command) return interaction.reply({
-        content: "You have used a non existent command",
+        content: "That command doesn't exist, please try again later or contact me at: Runa ٩(＾◡＾)۶#0666'",
         ephemeral: true
     });
     const userData = await Users.findOne({userId: interaction.member.user.id})
