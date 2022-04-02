@@ -1,2 +1,8 @@
 dist
 node_modules
+.github.
+tsconfig.json
+.vscode
+updates
+nodemon.json
+README.md
