@@ -1,10 +1,10 @@
-import { CommandInteractionOptionResolver } from 'discord.js'
-import Users from '../../database/schemas/Users'
-import { client } from '../../index'
-import { Event } from '../../structures/Event'
-import { Extendedinteraction } from '../../types/CommandTypes'
+import { CommandInteractionOptionResolver } from "discord.js"
+import Users from "../../database/schemas/Users"
+import { client } from "../../index"
+import { Event } from "../../structures/Event"
+import { Extendedinteraction } from "../../types/CommandTypes"
 
-export default new Event('interactionCreate', async interaction => {
+export default new Event("interactionCreate", async interaction => {
   try {
     if (interaction.isCommand()) {
       const command = client.commands.get(interaction.commandName)

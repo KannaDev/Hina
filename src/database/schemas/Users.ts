@@ -1,7 +1,7 @@
-import { Schema, Document, model, Types } from 'mongoose'
+import { Schema, Document, model, Types } from "mongoose"
 
 export interface Crate {
-  type: 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary' | 'Unobtainable'
+  type: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary" | "Unobtainable"
   name: string
   description: string
   obtained: number
@@ -9,8 +9,8 @@ export interface Crate {
 }
 
 export interface Item {
-  type: 'Fishing' | 'Mining' | 'Utility'
-  rarity: 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legendary' | 'Unobtainable'
+  type: "Fishing" | "Mining" | "Utility"
+  rarity: "Common" | "Uncommon" | "Rare" | "Epic" | "Legendary" | "Unobtainable"
   name: string
   description: string
   obtained: number
@@ -36,4 +36,4 @@ const schema = new Schema({
   items: { type: Array },
 })
 
-export default model('Users', schema)
+export default model("Users", schema)

@@ -3,14 +3,14 @@ import {
   Client,
   ClientEvents,
   Collection,
-} from 'discord.js'
-import { CommandTypes } from '../types/CommandTypes'
-import glob from 'glob'
-import { promisify } from 'util'
-import { RegisterCommandsOptions } from '../types/Client'
-import { Event } from './Event'
-import Connect from '../database'
-import { Config } from '../types/Config'
+} from "discord.js"
+import { CommandTypes } from "../types/CommandTypes"
+import glob from "glob"
+import { promisify } from "util"
+import { RegisterCommandsOptions } from "../types/Client"
+import { Event } from "./Event"
+import Connect from "../database"
+import { Config } from "../types/Config"
 const globPromise = promisify(glob)
 
 export class Hina extends Client {
@@ -34,7 +34,7 @@ export class Hina extends Client {
       console.log(`Registering commands to ${guildId}`)
     } else {
       this.application?.commands.set(commands)
-      console.log('Registering global commands')
+      console.log("Registering global commands")
     }
   }
 
@@ -51,7 +51,7 @@ export class Hina extends Client {
       slashCommands.push(command)
     })
 
-    this.on('ready', () => {
+    this.on("ready", () => {
       this.registerCommands({
         guildId: `${process.env.GUILD_ID}`,
         commands: slashCommands,

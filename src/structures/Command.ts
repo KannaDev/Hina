@@ -1,4 +1,4 @@
-import { CommandTypes } from '../types/CommandTypes'
+import { CommandTypes } from "../types/CommandTypes"
 
 export class Command {
   constructor(commandOptions: CommandTypes) {

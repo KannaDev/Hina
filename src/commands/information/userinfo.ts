@@ -1,21 +1,21 @@
-import { GuildMember } from 'discord.js'
-import { Command } from '../../structures/Command'
-import { Embed } from '../../structures/Embed'
+import { GuildMember } from "discord.js"
+import { Command } from "../../structures/Command"
+import { Embed } from "../../structures/Embed"
 
 export default new Command({
-  name: 'userinfo',
-  description: '🤍 | View a users info!',
+  name: "userinfo",
+  description: "🤍 | View a users info!",
   options: [
     {
-      type: 'USER',
-      name: 'member',
-      description: '✨ | The user you would like to fetch!',
+      type: "USER",
+      name: "member",
+      description: "✨ | The user you would like to fetch!",
       required: false,
     },
   ],
   run: async ({ interaction, args }) => {
     const member =
-      (args.getMember('member') as GuildMember) || interaction.member
+      (args.getMember("member") as GuildMember) || interaction.member
 
     interaction.reply({
       embeds: [
@@ -30,12 +30,12 @@ export default new Command({
                     inline: true,
                  		       },*/
               {
-                name: 'Joined',
+                name: "Joined",
                 value: `${member.joinedAt}`,
                 inline: true,
               },
               {
-                name: 'Registered',
+                name: "Registered",
                 value: `${member.user.createdAt}`,
                 inline: true,
               },
