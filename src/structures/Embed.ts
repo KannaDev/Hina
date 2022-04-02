@@ -2,8 +2,8 @@ import {
   CommandInteraction,
   MessageEmbed,
   MessageEmbedOptions,
-} from "discord.js";
-import { client } from "..";
+} from 'discord.js'
+import { client } from '..'
 
 export class Embed {
   constructor(data?: MessageEmbedOptions, interaction?: CommandInteraction) {
@@ -15,10 +15,10 @@ export class Embed {
         iconURL: client.user.displayAvatarURL({
           dynamic: false,
           size: 128,
-          format: "png",
+          format: 'png',
         }),
       },
-    });
+    })
   }
 }
 

@@ -1,6 +1,6 @@
-import { ColorResolvable } from "discord.js";
+import { ColorResolvable } from 'discord.js'
 
 export interface Config {
-  colour: ColorResolvable;
-  owner_ids?: Array<string>;
+  colour: ColorResolvable
+  owner_ids?: Array<string>
 }

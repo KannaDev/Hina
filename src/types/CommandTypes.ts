@@ -4,24 +4,24 @@ import {
   CommandInteractionOptionResolver,
   GuildMember,
   PermissionResolvable,
-} from "discord.js";
-import { User } from "../database/schemas/Users";
-import { Hina } from "../structures/Client";
+} from 'discord.js'
+import { User } from '../database/schemas/Users'
+import { Hina } from '../structures/Client'
 
 export interface Extendedinteraction extends CommandInteraction {
-  member: GuildMember;
+  member: GuildMember
 }
 
 interface RunOptions {
-  client: Hina;
-  interaction: Extendedinteraction;
-  args: CommandInteractionOptionResolver;
+  client: Hina
+  interaction: Extendedinteraction
+  args: CommandInteractionOptionResolver
   userData: User
 }
 
-type RunFun = (options: RunOptions) => any;
+type RunFun = (options: RunOptions) => any
 
 export type CommandTypes = {
-  userPermissions?: PermissionResolvable[];
-  run: RunFun;
-} & ChatInputApplicationCommandData;
+  userPermissions?: PermissionResolvable[]
+  run: RunFun
+} & ChatInputApplicationCommandData

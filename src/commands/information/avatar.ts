@@ -1,21 +1,21 @@
-import { GuildMember } from "discord.js";
-import { Command } from "../../structures/Command";
-import { Embed } from "../../structures/Embed";
+import { GuildMember } from 'discord.js'
+import { Command } from '../../structures/Command'
+import { Embed } from '../../structures/Embed'
 
 export default new Command({
-  name: `avatar`,
-  description: `🤍 | Get a user's avatar!`,
+  name: 'avatar',
+  description: "🤍 | Get a user's avatar!",
   options: [
     {
-      type: "USER",
-      name: `member`,
-      description: `✨ | The user!`,
+      type: 'USER',
+      name: 'member',
+      description: '✨ | The user!',
       required: false,
     },
   ],
   run: async ({ interaction, args }) => {
     const member =
-      (args.getMember(`member`) as GuildMember) || interaction.member;
+      (args.getMember('member') as GuildMember) || interaction.member
 
     interaction.reply({
       embeds: [
@@ -32,6 +32,6 @@ export default new Command({
           interaction
         ),
       ],
-    });
+    })
   },
-});
+})
