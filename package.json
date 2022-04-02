@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --rs --cls src/index.ts",
     "build": "tsc",
     "prod": "node dist/index.js",
-    "eslint": "eslint --ext .js,.ts . -- --fix",
+    "eslint": "eslint --ext .js,.ts .",
     "prettier": "prettier --write \"**/*.+(js|ts)\"",
     "checks": "prettier --check \"src/**/*.ts\" --config .prettierrc && eslint --ext .js,.ts ."
   },
