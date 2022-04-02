@@ -7,9 +7,9 @@
     "dev": "ts-node-dev --rs --cls src/index.ts",
     "build": "tsc",
     "prod": "node dist/index.js",
-    "eslint": "eslint --ext .js,.ts .",
+    "eslint": "eslint --fix .",
     "prettier": "prettier --write \"**/*.+(js|ts)\"",
-    "checks": "prettier --check \"src/**/*.ts\" --config .prettierrc && eslint --ext .js,.ts ."
+    "checks": "prettier --check \"src/**/*.ts\" --config .prettierrc && eslint ."
   },
   "keywords": [
     "discord.js",
