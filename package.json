@@ -9,7 +9,7 @@
     "prod": "node dist/index.js",
     "eslint": "eslint --ext .js,.ts . -- --fix",
     "prettier": "prettier --write \"**/*.+(js|ts)\"",
-    "checks": "prettier --check \"src/**/*.ts\" --config && eslint --ext .js,.ts ."
+    "checks": "prettier --check \"src/**/*.ts\" --config .prettierrc && eslint --ext .js,.ts ."
   },
   "keywords": [
     "discord.js",
