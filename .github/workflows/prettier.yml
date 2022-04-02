@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: npm i
       - name: Lint
-        run: prettier --check "src/**/*.ts" --config && eslint .
+        run: npm run checks
