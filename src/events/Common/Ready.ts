@@ -3,7 +3,7 @@ import { client } from "../../"
 import { MessageEmbed } from "discord.js"
 export default new Event("ready", interaction => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  require("console-stamp")(console,("HH:MM:ss"))
+  require("console-stamp")(console, "HH:MM:ss")
   console.log(`${client.user.username} is now online`)
   console.log(`Guilds: ${client.guilds.cache.size}`)
   console.log(`Users: ${client.users.cache.size}`)

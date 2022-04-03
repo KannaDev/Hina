@@ -2,7 +2,7 @@ import { connect } from "mongoose"
 
 export default function () {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  require("console-stamp")(console,("HH:MM:ss"))
+  require("console-stamp")(console, "HH:MM:ss")
   connect(`${process.env.MONGODB}`)
     .then(() => {
       console.log("Connected to database")
