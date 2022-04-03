@@ -13,6 +13,8 @@ Hina is a multi-purpose Discord bot that seeks to provide a safer and more enjoy
 
 ❌ Raid Protection
 
+❌ Riot Games Features
+
 ❌ Games
 
 ❌ Setup script to allow easy installation on Windows & Linux Systems for self-hosting
