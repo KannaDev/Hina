@@ -8,6 +8,7 @@ export default new Event("interactionCreate", async interaction => {
   try {
     if (interaction.isCommand()) {
       const command = client.commands.get(interaction.commandName)
+      console.log(interaction.commandName)
       if (!command) {
         return interaction.reply({
           content:
