@@ -9,6 +9,7 @@
     "prod": "node dist/index.js",
     "eslint": "eslint --fix .",
     "prettier": "prettier --write \"**/*.+(js|ts)\"",
+    "eslint-prettier": "eslint --fix . && prettier --write \"**/*.+(js|ts)\"",
     "checks": "prettier --check \"src/**/*.ts\" --config .prettierrc && eslint ."
   },
   "keywords": [
