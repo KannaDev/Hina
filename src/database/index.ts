@@ -1,5 +1,4 @@
 import { connect } from "mongoose"
-
 export default function () {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   require("console-stamp")(console, "HH:MM:ss")

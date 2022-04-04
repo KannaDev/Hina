@@ -5,6 +5,7 @@ declare global {
       MONGODB: string
       GUILD_ID: string
       INVITE: string
+      CHANNEL_LOGS: string
     }
   }
 }
