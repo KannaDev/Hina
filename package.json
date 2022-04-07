@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "@eugabrielsilva/djs-paginate": "^1.0.1",
+    "@haileybot/captcha-generator": "^1.7.0",
     "@types/glob": "^7.2.0",
     "@types/humanize-duration": "^3.27.1",
     "chalk": "^4.1.2",
