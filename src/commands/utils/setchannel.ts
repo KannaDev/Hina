@@ -20,6 +20,17 @@ export default new Command({
     await verificationSchemaa.updateOne({
       channelID: interaction_channel,
     })
-    interaction.reply({ content: "channel set" })
+    interaction.reply({
+      embeds: [
+        new Embed(
+          {
+            title: "Verification Channel Set",
+            url: "https://github.com/KannaDev/Hina/wiki/Verification",
+            description: `${interaction_channel} has been set as the Verification channel.`,
+          },
+          interaction
+        ),
+      ],
+    })
   },
 })
