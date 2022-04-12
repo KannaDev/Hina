@@ -29,3 +29,5 @@ Pull Requests are always welcome for adding new features, fixing bugs, etc. Any 
 # Contributors
 
 [Saige](https://github.com/Saigeie) - Refactored to typescript, moved the original commands to the new handler, made a base for an economy system 🤍
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=KannaDev_Hina&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=KannaDev_Hina)
