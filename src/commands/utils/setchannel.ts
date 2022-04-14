@@ -20,6 +20,9 @@ export default new Command({
     await verificationSchemaa.updateOne({
       channelID: interaction_channel,
     })
+    await verificationSchemaa.updateOne({
+      guildID: interaction.guild.id,
+    })
     interaction.reply({
       embeds: [
         new Embed(
