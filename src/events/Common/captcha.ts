@@ -19,27 +19,29 @@ export default new Event("guildMemberAdd", async member => {
   console.log(toggle)
   console.log(guildID)
   console.log(roleID)
-  try {
-    const captcha = new Captcha(client, {
-      guildID: guildID,
-      roleID: roleID,
-      channelID: channel,
-      sendToTextChannel: false,
-      kickOnFailure: true,
-      caseSensitive: false,
-      attempts: 3,
-      timeout: 30000,
-      showAttemptCount: true,
-      customPromptEmbed: new MessageEmbed().setTitle("Captcha Verification"),
-      customSuccessEmbed: new MessageEmbed()
-        .setTitle("✅")
-        .setDescription("Successfully Verified."),
-      customFailureEmbed: new MessageEmbed()
-        .setTitle("❌")
-        .setDescription("Failed Verification."),
-    })
-    captcha.present(member)
-  } catch (err) {
-    console.log(err)
+  if (data.enabled === true) {
+    try {
+      const captcha = new Captcha(client, {
+        guildID: guildID,
+        roleID: roleID,
+        channelID: channel,
+        sendToTextChannel: true,
+        kickOnFailure: true,
+        caseSensitive: false,
+        attempts: 3,
+        timeout: 30000,
+        showAttemptCount: true,
+        customPromptEmbed: new MessageEmbed().setTitle("Captcha Verification"),
+        customSuccessEmbed: new MessageEmbed()
+          .setTitle("✅")
+          .setDescription("Successfully Verified."),
+        customFailureEmbed: new MessageEmbed()
+          .setTitle("❌")
+          .setDescription("Failed Verification."),
+      })
+      captcha.present(member)
+    } catch (err) {
+      console.log(err)
+    }
   }
 })

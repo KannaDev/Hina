@@ -17,11 +17,12 @@ export default new Command({
   run: async ({ interaction, args, client }) => {
     const interaction_channel = interaction.options.getChannel("setchannel")
     console.log(interaction_channel)
-    await verificationSchemaa.updateOne({
-      channelID: interaction_channel,
+    const guild = interaction.guild
+    const guildSettings = await verificationSchemaa.findOne({
+      guildID: guild.id,
     })
-    await verificationSchemaa.updateOne({
-      guildID: interaction.guild.id,
+    await guildSettings.updateOne({
+      channelID: interaction_channel,
     })
     interaction.reply({
       embeds: [
