@@ -34,7 +34,7 @@
     "dotenv": "^16.0.0",
     "fetch": "^1.1.0",
     "humanize-duration": "^3.27.1",
-    "mongoose": "^6.2.8",
+    "mongoose": "^6.12.0",
     "winston": "^3.6.0"
   },
   "devDependencies": {
